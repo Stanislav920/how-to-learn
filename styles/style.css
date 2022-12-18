@@ -1,6 +1,5 @@
 /* Page
 ==============*/
-
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -56,6 +55,7 @@
 
 .header__subtitle {
   width: 388px;
+  margin: 0;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -70,12 +70,6 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
-
-  position: absolute;
-  bottom: 51px;
-  left: 127px;
-
-  z-index: 2;
 }
 
 .header__main-illustration {
@@ -213,10 +207,6 @@
   margin: 20px 0 0 0;
 }
 
-.table__text:last-of-type {
-  padding: 0;
-}
-
 /* Feynman
 ==============*/
 
@@ -291,7 +281,7 @@
   overflow: hidden;
   position: relative;
 
-  background-color: #000000;
+  background-color: #1f1f1f;
 }
 
 .section-title_theme_dark {
@@ -309,6 +299,8 @@
 
   color: #fff;
   position: relative;
+
+  z-index: 1;
 }
 
 .table_theme_dark {
@@ -350,20 +342,19 @@
   padding: 60px 0 40px 0;
   box-sizing: border-box;
 
-  background-color: #000000;
+  background-color: #1f1f1f;
 }
 
-.footer__column {
+.footer__columns {
   display: flex;
   justify-content: space-between;
-
   width: 90%;
   margin: 0 auto;
-  align-items: stretch;
 }
 
 .footer__column_content_copyrigt {
   display: flex;
+
   flex-basis: 711px;
   flex-direction: column;
   justify-content: space-between;
@@ -380,15 +371,13 @@
   font-weight: 400;
   line-height: 25px;
 
-  padding: 18px 0 18px 0;
-  margin: 0;
+  margin: 18px 0 18px 0;
 
   color: #fff;
 }
 
 .footer__column-heading {
-  margin: 0;
-  padding: 0 0 20px 0;
+  margin: 0 0 20px 0;
 
   font-size: 18px;
   font-weight: 600;
@@ -397,37 +386,16 @@
   color: #fff;
 }
 
-.footer__nav {
-  margin: 0px 25px 0px 0px;
-}
-
-.footer__column_content_info {
-  flex-basis: 0;
-  display: inline-block;
-}
-
 .footer__column-links {
+  list-style-type: none;
+  padding: 0;
   margin: 0 0 16px 0;
-  padding: 0;
-}
-
-.footer__column-list {
-  margin: 0 0 0 40px;
-  padding: 0;
-}
-
-.footer__column_content_social {
-  flex-basis: 0;
-  display: inline-block;
-  margin: 0;
 }
 
 .footer__column-link {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-
-  margin: 0 0 0 -38px;
 
   color: #f2f2f2;
 
@@ -438,4 +406,9 @@
   width: 16px;
   height: 16px;
   margin: 0 10px 0 0;
+}
+
+.content {
+  margin: 0;
+  padding: 0;
 }
