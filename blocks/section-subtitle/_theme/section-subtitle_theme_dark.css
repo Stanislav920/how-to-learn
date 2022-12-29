@@ -1,0 +1,9 @@
+.section-subtitle_theme_dark {
+  text-align: center;
+  margin: 20px 0 0 0;
+
+  color: #fff;
+  position: relative;
+
+  z-index: 1;
+}

@@ -1,0 +1,4 @@
+.kaufman__triangle_rotation {
+  transform: rotate(15deg);
+  animation: rotation linear 20s infinite;
+}
